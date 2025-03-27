@@ -6,8 +6,6 @@ const mongoURI =
 const connectToMongo = async () => {
   try {
     await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
       serverSelectionTimeoutMS: 5000, // Reduce timeout to avoid long waits
       socketTimeoutMS: 45000,
       autoIndex: false, // Disable auto-indexing for performance

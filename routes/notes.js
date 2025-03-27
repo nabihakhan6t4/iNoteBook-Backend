@@ -48,7 +48,7 @@ router.post(
 
 // ✅ Route: Update an existing note
 // ✅ Method: PUT
-// ✅ Endpoint: "/api/auth/updatenote/:id"
+// ✅ Endpoint: "/api/notes/updatenote/:id"
 // ✅ Access: Login required
 router.put("/updatenote/:id", fetchuser, async (req, res) => {
   try {
@@ -87,7 +87,7 @@ router.put("/updatenote/:id", fetchuser, async (req, res) => {
 
 // ✅ Route: Delete an existing note
 // ✅ Method: DELETE
-// ✅ Endpoint: "/api/auth/deletenote/:id"
+// ✅ Endpoint: "/api/notes/deletenote/:id"
 // ✅ Access: Login required
 router.delete("/deletenote/:id", fetchuser, async (req, res) => {
   try {
