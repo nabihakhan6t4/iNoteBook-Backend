@@ -1,7 +1,10 @@
+
+require("dotenv").config();
+
 const mongoose = require("mongoose");
 
-const mongoURI =
-  "mongodb+srv://khannabiha923:itx%40nabihakhan6t4@cluster0.r4gvu.mongodb.net/notebookDB?retryWrites=true&w=majority";
+// Replace hardcoded URI with environment variable
+const mongoURI = process.env.MONGO_URI;
 
 const connectToMongo = async () => {
   try {
