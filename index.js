@@ -14,9 +14,9 @@ const port = process.env.PORT || 5000; // Use PORT from .env
 
 // CORS setup
 app.use(cors({ 
-  origin: "*",  
+  origin: "https://nabihakhan6t4.github.io",  
   methods: "GET,POST,PUT,DELETE,OPTIONS",
-  allowedHeaders: "Content-Type,Authorization"
+  allowedHeaders: "Content-Type, Authorization, auth-token"
 }));
 
 
